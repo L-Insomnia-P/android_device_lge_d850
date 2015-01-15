@@ -25,7 +25,7 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d850/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := du_defconfig
+TARGET_KERNEL_CONFIG := du_d850_defconfig
 TARGET_REQUIRES_BUMP := true
 
 # Partitions
@@ -49,6 +49,8 @@ TARGET_USES_QCOM_WCNSS_QMI := true
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+DEVICE_RESOLUTION := 1440x2560
 
 # inherit from the proprietary version
 -include vendor/lge/d850/BoardConfigVendor.mk
